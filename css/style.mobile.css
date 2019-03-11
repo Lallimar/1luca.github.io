@@ -1,0 +1,273 @@
+@media screen and (max-width: 600px) {
+    
+    .navTesto {
+        display: none;
+    }
+
+    .navIcon {
+        display: initial;
+    }
+
+    .navWrapper * {
+        margin: 0px 5px;
+        text-align: center;
+        }
+
+    .inAlto:hover {
+        grid-row-start: 2;
+        grid-row-end: 4; 
+    }
+    
+    .inBasso:hover {
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+    
+    .dx:hover {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        animation: none;
+    }
+    
+    .sx:hover {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        animation: none;
+    }
+    
+    .descrizione {
+        height: auto;
+        background-image: radial-gradient(ellipse at center, #001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+      }
+      
+      
+      
+      .descrizione p { 
+        grid-column-start: 1;
+        grid-row-start: 2;
+        z-index: 2;
+        color: white;
+        margin: 20px;
+        text-align: justify;
+        align-self: center;
+        justify-self: center;
+        padding: 10px;
+      }
+      
+      .descrizione img { 
+        width: 70%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 2;
+        align-self: end;
+        justify-self: center;
+        margin-top: 40px;
+      }
+      
+      #sfondoDescrizione { 
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        filter: grayscale(1);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        z-index: 1;
+        margin: 0;
+      }
+
+      .titoloSezione {
+        text-align: center;
+         }
+
+         .titoloSezione h2 {
+            margin-left: 0px;
+          }
+
+        .titoloSezione hr {
+            margin-left: 0px;
+            width: 100%;
+        }
+
+        .skillContainer {
+            width: 250px;
+        }
+    
+    .containerLavoro {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .timeline {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    
+    .linea {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: #0024ba;
+        background-image: linear-gradient(to top, #001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
+    
+    }
+    
+    .data {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 30px;
+        padding: 0px 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        flex-direction: row;
+        justify-self: center;
+    }
+
+    .data br {
+        display: none;
+    }
+    
+    .lavoroBox {
+        z-index: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        background-color: white;
+    }
+    
+    .titolettoLavoro {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .imgLavoro {
+        height: 70px;
+        width: 70px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .datoreDescrizioneTitolo {
+        margin: 10px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .datoreDescrizioneTitolo p {
+        margin-top: 5px;
+    }
+    
+    .datoreDescrizioneTitolo span {
+        margin-top: 3px;
+        font-style: italic;
+    }
+    
+    .datoreDescrizioneTitolo h3 {
+        margin: 0px;
+        width: 100%;
+    }
+    
+    .datoreDescrizioneTitolo hr {
+        margin-top: 10px;
+        width: 100%;
+    }
+        
+    .mansioni ul{
+        text-align: justify;
+        text-justify: inter-word;
+        padding-left: 20px;
+        list-style-position: outside;
+      }
+
+      .mansioni li {
+        margin-bottom: 5px;
+      }
+}
+
+@media screen and (max-height: 640px) {
+    body {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-height:450px) and (orientation: landscape) {
+
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        margin-bottom: 0px;
+    }
+
+    .navWrapper {
+        justify-content: flex-end;
+    }
+
+    .navWrapper * {
+        margin: 0px 5px;
+        text-align: center;
+    }
+
+    
+    header {
+        grid-template-rows: 2px auto 1fr;
+    }
+
+    .hero {
+        margin-top: 2px;
+        align-items: center;
+    }
+
+    .heroIntWrapperExt {
+        flex-direction: row;
+    }
+
+    #GranTitolo {
+        text-align: right;
+    }
+
+    .heroIntWrapperInt {
+        max-height: 70vh;
+        grid-template-rows: 10px 2fr 1fr 30px 1fr 2fr 10px;
+    }
+
+    #center * {
+        margin: 0px;
+        padding: 5px;
+      }
+
+    #freccia {
+        margin-bottom: 5px;
+    }
+}
+
