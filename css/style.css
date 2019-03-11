@@ -21,6 +21,7 @@ h1 {
     font-size: 3em;
     text-decoration: underline;
     text-decoration-color: aqua;
+    -webkit-text-decoration-color: aqua;
     margin: 0px;
 }
 
