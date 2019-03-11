@@ -63,6 +63,7 @@ hr {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  position: absolute;
   z-index: -1;
 }
 
