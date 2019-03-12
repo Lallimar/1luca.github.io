@@ -97,6 +97,10 @@
             width: 250px;
         }
     
+      .containerTimeline {
+        margin: 10% 20px;
+        }
+    
     .containerLavoro {
         width: 100%;
         display: grid;
