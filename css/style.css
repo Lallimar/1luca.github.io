@@ -579,7 +579,7 @@ grid-auto-rows: auto;
 .datoreDescrizioneTitolo span {
   display: block;
   margin: 5px 0px 0px 0px;
-  font-style: bold;
+  font-style: italic;
 }
 
 .datoreDescrizioneTitolo h3 {
