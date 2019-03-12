@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;
+  font-size: 16px;
 }
 
 body {
@@ -16,6 +17,8 @@ body {
 }
 */
 
+/* GENERALE */
+
 h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 3em;
@@ -28,15 +31,17 @@ h2 {
 
 h3 {
   font-family: 'Cabin', sans-serif;
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 hr {
   border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+/* STRUTTURA PER FAR STARE L'ANIMAZIONE SOTTO LA HERO SECTION */
 
 .animazione {
   width: 100vw;
@@ -47,6 +52,8 @@ hr {
   justify-items: center;
   overflow: hidden;
 }
+
+/* CANVAS PER L'ANIMAZIONE */
 
 #particles-js{
   grid-column-start: 1;
@@ -60,9 +67,10 @@ hr {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
+
+/* HEADER -.-' */
 
 header {
     grid-column-start: 1;
@@ -75,8 +83,10 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20px auto 1fr;
-    z-index: 10;
+    z-index: 2;
 }
+
+/* NAVBAR */
 
 nav {
     grid-column-start: 1;
@@ -109,6 +119,7 @@ nav {
     display: none;
 }
 
+/* HERO SECTION */
 
 .hero {
     width: 100%;
@@ -142,8 +153,9 @@ nav {
   text-decoration: underline;
   text-decoration-color: aqua;
   -webkit-text-decoration-color: aqua;
-  margin: 0px;
+  margin-bottom: 0px;
 }
+
 
 .heroIntWrapperInt {
     min-width: 300px;
@@ -328,6 +340,8 @@ nav {
     }
   }
 
+/* PARTE DESCRIZIONE */
+
 .descrizione {
   height: 100vh;
   background-image: radial-gradient(ellipse at center, #001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
@@ -370,6 +384,8 @@ nav {
   margin: 0;
 }
 
+/* GENERALE SEZIONI DEL CORPO CV */
+
 .titoloSezione hr {
   width: 70%;
   margin-left: 10%;
@@ -378,6 +394,8 @@ nav {
 .titoloSezione h2 {
   margin-left: 10%;
 }
+
+/* SKILLS */
 
 .sezioneSkills {
   display: flex;
@@ -457,6 +475,8 @@ nav {
   visibility: hidden;
   margin-left: 15px;
 }
+
+/* WORK EXPERIENCE & EDUCATION */
 
 .containerTimeline {
 margin: 10%;
@@ -559,7 +579,7 @@ grid-auto-rows: auto;
 .datoreDescrizioneTitolo span {
   display: block;
   margin: 5px 0px 0px 0px;
-  font-style: italic;
+  font-style: bold;
 }
 
 .datoreDescrizioneTitolo h3 {
@@ -585,6 +605,13 @@ grid-auto-rows: auto;
 
 .mansioni li:last-child {
   margin-bottom: 0;
+}
+
+.Certifications {
+  margin: 0px 10% 10% 10%;
+  min-width: 300px;
+  max-width: 700px;
+  border-radius: 15px;
 }
 
 footer {
