@@ -26,12 +26,14 @@
     .dx:hover {
         grid-column-start: 5;
         grid-column-end: 7;
-        animation: none;
     }
     
     .sx:hover {
         grid-column-start: 2;
         grid-column-end: 4;
+    }
+    
+    #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
         animation: none;
     }
     
