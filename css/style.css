@@ -17,6 +17,73 @@ body {
 }
 */
 
+/*ANIMAZIONI*/
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    45% {
+      transform: translateY(-15px);
+    }
+    
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+@keyframes bounceAltoSx {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0) skew(20deg);
+  }
+  40% {
+    transform: translateX(-15px) skew(20deg);
+  }
+  60% {
+    transform: translateX(-15px) skew(20deg);
+  }
+}
+
+
+@keyframes bounceBassoSx {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0) skew(-20deg);
+  }
+  40% {
+    transform: translateX(-15px) skew(-20deg);
+  }
+  60% {
+    transform: translateX(-15px) skew(-20deg);
+  }
+}
+
+
+@keyframes bounceBassoDx {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0) skew(20deg);
+    }
+    40% {
+      transform: translateX(15px) skew(20deg);
+    }
+    60% {
+      transform: translateX(15px) skew(20deg);
+    }
+  }
+
+  @keyframes bounceAltoDx {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0) skew(-20deg);
+    }
+    40% {
+      transform: translateX(15px) skew(-20deg);
+    }
+    60% {
+      transform: translateX(15px) skew(-20deg);
+    }
+  }
+
+
 /* GENERALE */
 
 h1 {
@@ -254,19 +321,6 @@ nav {
     animation: bounce 1s infinite;
 }
 
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    45% {
-      transform: translateY(-15px);
-    }
-    
-    60% {
-      transform: translateY(-15px);
-    }
-  }
-
 .categoria img { 
    width: 100%;
    height: 100%;
@@ -299,7 +353,6 @@ nav {
 }
 
 .sx:hover {
-    animation: bounceSx 1s infinite;
     grid-column-start: 1;
 }
 
@@ -311,34 +364,43 @@ nav {
   grid-row-end: 8; 
 }
 
-@keyframes bounceSx {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateX(0);
-    }
-    40% {
-      transform: translateX(-15px);
-    }
-    60% {
-      transform: translateX(-15px);
-    }
-  }
-
 .dx:hover {
-    animation: bounceDx 1s infinite;
     grid-column-end: 8;
 }
 
-@keyframes bounceDx {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateX(0);
-    }
-    40% {
-      transform: translateX(15px);
-    }
-    60% {
-      transform: translateX(15px);
-    }
-  }
+  #inAltoSx, #inBassoDx {
+    transform: skew(20deg);
+   }
+  
+  
+   #inBassoSx, #inAltoDx {
+    transform: skew(-20deg);
+   }
+  
+  #inAltoSx p, #inBassoDx p {
+    transform: skew(-20deg);
+   }
+  
+  
+   #inBassoSx p, #inAltoDx p {
+    transform: skew(20deg);
+   }
+
+   #inAltoSx:hover {     
+    animation: bounceAltoSx 1s infinite;
+   }
+
+   #inBassoSx:hover {     
+    animation: bounceBassoSx 1s infinite;
+   }
+
+   #inAltoDx:hover {
+    animation: bounceAltoDx 1s infinite;
+   }
+
+   #inBassoDx:hover {
+    animation: bounceBassoDx 1s infinite;
+   }
 
 /* PARTE DESCRIZIONE */
 
