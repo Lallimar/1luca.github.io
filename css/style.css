@@ -206,8 +206,6 @@ nav {
 .heroIntWrapperExt {
   display: flex;
   flex-direction: column; 
-  margin-bottom: 20px;
-
 }
 
 #GranTitolo {
@@ -232,6 +230,7 @@ nav {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 30px 1fr 1fr 20px;
     grid-template-rows: 10px 1fr 1fr 30px 1fr 1fr 10px;
+    margin-bottom: 20px;
 }
 
 .categoria {
