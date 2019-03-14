@@ -191,6 +191,7 @@ nav {
 .hero {
     width: 100%;
     margin-top: 20px;
+    padding-bottom: 20px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -230,7 +231,6 @@ nav {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 30px 1fr 1fr 20px;
     grid-template-rows: 10px 1fr 1fr 30px 1fr 1fr 10px;
-    margin-bottom: 20px;
 }
 
 .categoria {
