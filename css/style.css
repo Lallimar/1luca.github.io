@@ -290,6 +290,7 @@ nav {
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 6;
+    padding: 20px;
     text-align: center;
     border-radius: 15px;
     background-color: white;
