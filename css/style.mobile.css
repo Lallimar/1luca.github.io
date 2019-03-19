@@ -13,7 +13,21 @@
         text-align: center;
         }
 
-  
+    .sx:hover {
+    grid-column-start: 2;
+    }
+
+    .inAlto:hover {
+      grid-row-start: 2; 
+    }
+
+    .inBasso:hover {
+      grid-row-end: 7; 
+    }
+
+    .dx:hover {
+        grid-column-end: 7;
+    }
     #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
         animation: none;
     }
@@ -255,6 +269,22 @@
 
     #freccia {
         margin-bottom: 5px;
+    }
+    
+    .sx:hover {
+    grid-column-start: 2;
+    }
+
+    .inAlto:hover {
+      grid-row-start: 2; 
+    }
+
+    .inBasso:hover {
+      grid-row-end: 7; 
+    }
+
+    .dx:hover {
+        grid-column-end: 7;
     }
     
     #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
