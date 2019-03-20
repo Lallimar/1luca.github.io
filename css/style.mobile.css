@@ -229,8 +229,31 @@
       .imgCertification img {
         width: 70px;
       }
+    
+    .activitiesWrapper {
+          margin-left: 20px;
+          margin-right: 20px;
+      }
 
       .activityDifferantiatorHr {
+          display: none;
+      }
+    
+     .Interests h3 {
+          margin-left: 0;
+          text-align: center;
+      }
+      .interesseBox {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+      .interesseBox:first-child {
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+
+      .rightBordCreator {
           display: none;
       }
 }
