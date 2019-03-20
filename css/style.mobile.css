@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-    
+
     .navTesto {
         display: none;
     }
@@ -13,25 +13,32 @@
         text-align: center;
         }
 
-    .sx:hover {
-    grid-column-start: 2;
-    }
-
     .inAlto:hover {
-      grid-row-start: 2; 
+        grid-row-start: 2;
+        grid-row-end: 4; 
     }
-
+    
     .inBasso:hover {
-      grid-row-end: 7; 
+        grid-row-start: 5;
+        grid-row-end: 7;
     }
-
+    
     .dx:hover {
+        grid-column-start: 5;
         grid-column-end: 7;
-    }
-    #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
         animation: none;
     }
     
+    .sx:hover {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        animation: none;
+    }
+    
+    #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
+        animation: none;
+    }
+
     .descrizione {
         height: auto;
         background-image: radial-gradient(ellipse at center, #001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
@@ -40,8 +47,7 @@
         grid-template-columns: 1fr;
       }
       
-      
-      
+           
       .descrizione p { 
         grid-column-start: 1;
         grid-row-start: 2;
@@ -94,10 +100,10 @@
             width: 250px;
         }
     
-      .containerTimeline {
-        margin: 10% 20px;
+    .containerTimeline {
+        margin: 10% 20px 0px 20px;
         }
-    
+
     .containerLavoro {
         width: 100%;
         display: grid;
@@ -210,6 +216,23 @@
       .mansioni li {
         margin-bottom: 5px;
       }
+
+      .certificationsBox {
+          margin: 0px 20px 10% 20px;
+      }
+
+      .imgCertification {
+        width: 70px;
+        height: 70px;
+      }
+
+      .imgCertification img {
+        width: 70px;
+      }
+
+      .activityDifferantiatorHr {
+          display: none;
+      }
 }
 
 @media screen and (max-height: 640px) {
@@ -223,7 +246,7 @@
 @media screen and (max-height:450px) and (orientation: landscape) {
 
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     nav {
@@ -255,11 +278,14 @@
 
     #GranTitolo {
         text-align: right;
+        width: 35vw;
+        margin-right: 20px;
     }
 
     .heroIntWrapperInt {
         max-height: 70vh;
         grid-template-rows: 10px 2fr 1fr 30px 1fr 2fr 10px;
+        margin: 0 10px 10px 0;
     }
 
     #center * {
@@ -269,26 +295,6 @@
 
     #freccia {
         margin-bottom: 5px;
-    }
-    
-    .sx:hover {
-    grid-column-start: 2;
-    }
-
-    .inAlto:hover {
-      grid-row-start: 2; 
-    }
-
-    .inBasso:hover {
-      grid-row-end: 7; 
-    }
-
-    .dx:hover {
-        grid-column-end: 7;
-    }
-    
-    #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
-        animation: none;
     }
 }
 
