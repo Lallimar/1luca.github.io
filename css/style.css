@@ -883,8 +883,6 @@ grid-auto-rows: auto;
   position: fixed;
   bottom: 20%;
   right: 20%;
-  margin-left:auto;
-  margin-right: 20%;
   width: 150px;
   height: 170px;
   flex-direction: column;
