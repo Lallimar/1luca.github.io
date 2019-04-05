@@ -880,9 +880,9 @@ grid-auto-rows: auto;
 
 #sticky {
   display: none;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   bottom: 20%;
+  right: 20%;
   margin-left:auto;
   margin-right: 20%;
   width: 150px;
