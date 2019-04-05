@@ -933,7 +933,8 @@ grid-auto-rows: auto;
 }
 
 .skillTrovata {
-  background-color:rgb(0,255,255, 0.3);
+  	background-color:rgb(0,255,255);
+	background-color:rgb(0,255,255, 0.3);
  }
 
 footer {
