@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
     <body>
-        <div class="animazione">
+        <div id="sc" class="animazione">
             <div id="particles-js"></div>
             <header>
                 <nav>
@@ -21,15 +21,15 @@
                         <li class = "navIcon" id = "downloadIcon"><i class = "fas fa-paperclip"></i></li>
                         <li class = "navTesto"  id = "download">Download CV</li>
                         <li id = "separatore">|</li>
-                        <li class = "navTesto"  id = "contact">Contact</li>
-                        <li class = "navIcon" id = "contactIcon"><i class="far fa-envelope-open"></i></li>                
+                        <li class = "navTesto"  id = "contact"><a href="mailto:1luca.marongiu@gmail.com">Contact</a></li>
+                        <li class = "navIcon" id = "contactIcon"><a href="mailto:1luca.marongiu@gmail.com"><i class="far fa-envelope-open"></i></a></li>                
                     </ul>
                 </nav>
                 <div class="hero">
                     <div class="heroIntWrapperExt">
                         <div id="GranTitolo">
-                            <h1>Skills Finder CV</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h1>Augmented CV</h1>
+                            <p>Just relax. It'll connect the dots for you.</p>
                         </div>
                         <div class="heroIntWrapperInt">
                                 <div id = "center">
@@ -58,42 +58,54 @@
                 </div>
             </header>
         </div>
-       <main>
+        <main>
             <div class="descrizione">
                 <img id="sfondoDescrizione" src="img/descrizione/hyperspace.JPG" alt="">
                 <img src="img/descrizione/visualDescription.png" alt="">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore, odio repellat labore consequuntur, maxime at obcaecati nisi saepe laudantium minus eligendi placeat. Optio quia quas blanditiis odit fugit iure. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ratione sunt porro mollitia recusandae veritatis, impedit obcaecati sint fugit delectus a soluta perspiciatis possimus deserunt natus et sed labore! Corrupti.
+                    Yo guys, welcome to my resume!<br><br>Enjoy exploring its sections (there are <a href="#sc">short-cut buttons</a> in the section above), or, if you lack the time, try the automatic mode. How does it work?<br><br>Just go to the Skill section (<a href="#1">below</a>) and look for the skills or competences you are interested in. You can scroll the Skills section horizontally to unvail more categories. Once you've found the one you were looking for, click on it: the complex algorithm (just kidding, is less than 100 lines of code) will bring you directly to the part of the CV highliting how I aquired it or put it to good use.<br><br>You can use the "next" button that'll appear on the bottom-right of the page, or scroll up and down yourself. When you are done, click on the "x" symbol above "next" button, and go for another skill!
                 </p>
             </div>
             <div class="corpoCV">
                 <div id="1" class="Skills">
                     <div class="titoloSezione">
-                        <h2>Skills</h2>
+                        <h2>Skills</h2> <p id="demo"></p>
                         <hr align="left">
                     </div>
-                    <div class="sezioneSkills dragscroll">
+                    <div class="sezioneSkills dragscroll" id="areaLimiteClick">
                         <div class="skillContainer">
                                 <div class="titoletto">
-                                <h3><i class="fas fa-marker"></i>Sales Skills</h3>
+                                <h3><i class="fas fa-marker"></i>Business Skills</h3>
                             </div>
                             <hr>
                             <div class="listaSkills">
                                 <div class="specificSkill">
-                                    <p>Sales Management</p>
+                                    <p>Complex Sales</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Complex Sales</p>
+                                    <p>B2B Sales</p>
                                 </div>
                                 <div class="specificSkill">
                                     <p>Sales Operations</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Customer Relationship Management</p>
+                                    <p>Relationship-building</p>
                                 </div>
                                 <div class="specificSkill">
                                     <p>Sales Pitch</p>
-                                </div>   
+                                </div> 
+                                <div class="specificSkill">
+                                    <p>Sales Management</p>
+                                </div> 
+                                <div class="specificSkill">
+                                    <p>B2B Marketing</p>
+                                </div> 
+                                <div class="specificSkill">
+                                    <p>Market Intelligence</p>
+                                </div>
+                                <div class="specificSkill">
+                                    <p>Business Strategy</p>
+                                </div>  
                             </div>    
                         </div>
                         <div class="skillContainer">
@@ -112,7 +124,7 @@
                                     <p>Adaptability</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Teamwork</p>
+                                    <p>Teamworking</p>
                                 </div>
                                 <div class="specificSkill">
                                     <p>Leadership</p>
@@ -127,6 +139,9 @@
                                     <p>Stubborness</p>
                                 </div> 
                                 <div class="specificSkill">
+                                    <p>Negotiation</p>
+                                </div> 
+                                <div class="specificSkill">
                                     <p>Sleight-of-hand</p>
                                 </div>   
                             </div>    
@@ -138,14 +153,29 @@
                             <hr>
                             <div class="listaSkills">
                                 <div class="specificSkill">
-                                    <p>Sales Management</p>
+                                    <p>HTML5</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Sales Operations</p>
+                                    <p>CSS3</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Customer Relationship Management</p>
-                                </div>   
+                                    <p>JavaScript</p>
+                                </div>  
+                                <div class="specificSkill">
+                                    <p>CRM Softwares</p>
+                                </div> 
+                                <div class="specificSkill">
+                                    <p>Legal Databases</p>
+                                </div>
+                                <div class="specificSkill">
+                                    <p>Microsoft Office</p>
+                                </div> 
+                                <div class="specificSkill">
+                                    <p>GIMP</p>
+                                </div> 
+                                <div class="specificSkill">
+                                    <p>Inkscape</p>
+                                </div>  
                             </div>    
                         </div>
                         <div class="skillContainer">
@@ -164,7 +194,7 @@
                                     <p>Digital</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Hydrogen Fuel Cells</p>
+                                    <p>Hydrogen Energy</p>
                                 </div>
                                 <div class="specificSkill">
                                     <p>Legaltech</p>
@@ -193,28 +223,31 @@
                             <hr>
                             <div class="listaSkills">
                                 <div class="specificSkill">
-                                    <p>Sardinian</p>
+                                    <p>Sardinian (native)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Italian</p>
+                                    <p>Italian (native)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>French</p>
+                                    <p>French (proficient)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>English</p>
+                                    <p>English (proficient)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Catalan</p>
+                                    <p>Catalan (intermediate)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Spanish</p>
+                                    <p>Spanish (intermediate)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Arabic</p>
+                                    <p>Arabic (basic)</p>
                                 </div>
                                 <div class="specificSkill">
-                                    <p>Chinese</p>
+                                    <p>Chinese (basic)</p>
+                                </div>
+                                <div class="specificSkill">
+                                    <p>Esperanto (basic)</p>
                                 </div>      
                             </div>    
                         </div>
@@ -222,7 +255,7 @@
                     </div>
                 </div>
                 
-                
+               
                 
                 
                 <div id="2" class="workExperience">
@@ -245,14 +278,14 @@
                                     </div>
                                     <div class="datoreDescrizioneTitolo">
                                         <h3>H3 Dynamics</h3>
-                                        <p>Paris, France & Singapore - Artificial Intellignece and Cleantech</p>
-                                        <p><span>Sales & Marketing - Right Arm of the EMEA Director</span></p>
+                                        <p class="drones a.i. uam cleantech">Paris, France & Singapore - Drones, Artificial Intellignece and Cleantech</p>
+                                        <p><span class="businessstrategy">Sales & Marketing - Right Arm of the EMEA Director</span></p>
                                         <hr align="left">
                                     </div>
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells).</li>
+                                        <li class="adaptability">Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells).</li>
                                     </ul>
                                 </div>
                                 <hr style="width: 100%;">
@@ -262,16 +295,18 @@
                                     </div>
                                     <div class="datoreDescrizioneTitolo">
                                         <h3>H3Zoom.AI</h3>
-                                        <p>Paris, France & Singapore - AI for infrastructure inspection</p>
+                                        <p class="a.i.">Paris, France & Singapore - AI for infrastructure inspection</p>
                                         <p><span>Business Developer EMEA</span></p>
                                         <hr align="left">
                                     </div>
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Initiated successful cold email campaign (25% conversion rate), obtaining a meeting with each and every one of the targeted companies (French top tier construction companies). </li>
-                                        <li>Negotiated terms for the co-development of an Artificial Intelligence detecting anomalies on road infrastructures. </li>
-                                        <li>Explored, analysed and assessed several markets and industries at a European and Global scale, to prepare the launch of new drone/AI-based services.</li>
+                                        <li class="salesmanagement b2bsales b2bmarketing complexsales">Initiated successful cold email campaign (25% conversion rate), obtaining a meeting with each and every one of the targeted companies (French top tier construction companies).</li>
+                                        <li class="salesmanagement salespitch a.i. negotiation b2bsales complexsales">Negotiated terms for the co-development of an Artificial Intelligence detecting anomalies on road infrastructures. </li>
+                                        <li class="marketintelligence a.i. b2bmarketing drones">Explored, analysed and assessed several markets and industries at a European and Global scale, to prepare the launch of new drone/AI-based services.</li>
+                                        <li class="a.i. drones teamworking salespitch">Collaborated with the oversea sales team in generating profitable leads (through tradeshows, networking events, emails) for a cloud based facade inspection service that leverages A.I. and drone technology.</li>
+                                        <li class="microsoftoffice creativity inkscape gimp salespitch storytelling">Refined pitch decks and oral presentations to be used at meetings and business fairs.</li>
                                     </ul>
                                 </div>
                                 <hr style="width: 100%;">
@@ -281,18 +316,20 @@
                                     </div>
                                     <div class="datoreDescrizioneTitolo">
                                         <h3>HES Energy Systems</h3>
-                                        <p>Paris, France & Singapore - Ultralight Hydrogen Fuel Cells</p>
+                                        <p class="hydrogenenergy drones uam cleantech electricflight">Paris, France & Singapore - Ultralight Hydrogen Fuel Cells</p>
                                         <p><span>Account Manager EMEA & Marketing Leader</span></p>
                                         <hr align="left">
                                     </div>
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Generated relevant income by selling hydrogen fuel cell systems for UAVs.</li>
-                                        <li>Built long-term relations with partners from the largest European Energy and Aerospace companies.</li>
-                                        <li>Co-organized the launch of a hydrogen-electric plane at several European main events (EmTech, Journées de l’Hydrogène).</li>
-                                        <li>Solved customers’ problems by phone or in person, under stressful conditions.</li>
-                                        <li>Designed web application web application for automating the selling process of fuel cells systems</li>
+                                        <li class="salesmanagement complexsales hydrogenenergy b2bsales drones cleantech electricflight">Generated relevant income by selling hydrogen fuel cell systems for UAVs.</li>
+                                        <li class="relationship-building">Built long-term relations with partners from the largest European Energy and Aerospace companies.</li>
+                                        <li class="b2bmarketing uam cleantech electricflight">Co-organized the launch of a hydrogen-electric plane at several European main events (EmTech, Journées de l’Hydrogène).</li>
+                                        <li class="stressmanagement problem-solving">Solved customers’ problems by phone or in person, under stressful conditions.</li>
+                                        <li class="salesoperations creativity digital html5 css3 javascript">Designed web application web application for automating the selling process of fuel cells systems</li>
+                                        <li class="crmsoftwares">Maintained and built CRM records , reports, and opportunities (on Pipedrive) to increase sales optimization.</li>
+                                        <li class="microsoftoffice creativity inkscape gimp">Remodelled HES corporate style guide and designed new product brochures.</li>   
                                     </ul>
                                 </div>
                             </div>
@@ -318,8 +355,8 @@
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Achieved 122% turnover growth over the last 4 years, despite negative market trends.</li>
-                                        <li>Obtained 86% of 5-stars reviews on Airbnb, and Superhost badge for 8 consecutive quarters.</li>
+                                        <li class="businessstrategy">Achieved 122% turnover growth over the last 4 years, despite negative market trends.</li>
+                                        <li class="relationship-building">Obtained 86% of 5-stars reviews on Airbnb, and Superhost badge for 8 consecutive quarters.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -345,7 +382,7 @@
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Drafted contracts, legal briefs and opinions, and took part in the development of legal strategies for important criminal and commercial cases.</li>
+                                        <li class="law problem-solving legaldatabases">Drafted contracts, legal briefs and opinions, and took part in the development of legal strategies for important criminal and commercial cases.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -371,8 +408,8 @@
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Conducted legal researches preparing for national and cross border disputes and employment litigations.</li>
-                                        <li>Assisted dual qualified solicitor/avocat (UK/Fr) in supporting foreign companies operating in France </li>
+                                        <li class="law legaldatabases">Conducted legal researches preparing for national and cross border disputes and employment litigations.</li>
+                                        <li class="law relationship-building">Assisted dual qualified solicitor/avocat (UK/Fr) in supporting foreign companies operating in France </li>
                                     </ul>
                                 </div>
                             </div>
@@ -405,13 +442,13 @@
                                     <div class="datoreDescrizioneTitolo">
                                         <h3>EMLYON Business School</h3>
                                         <p>Lyon, France</p>
-                                        <p><span>Specialised Master in International Business Strategy for Lawyers.</span></p>
+                                        <p><span class="law">Specialised Master in International Business Strategy for Lawyers.</span></p>
                                         <hr align="left">
                                     </div>
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Economic Intelligence, Marketing B2B, International Business Strategy, M&A, Finance, Accountability, Start-ups’ Legal Consulting, Contract Engineering.</li>
+                                        <li class="law businessstrategy b2bmarketing marketintelligence negotiation">Economic Intelligence, Marketing B2B, International Business Strategy, M&A, Finance, Accountability, Negotiation Techniques, Start-ups’ Legal Consulting, Contract Engineering.</li>
                                     </ul>
                                 </div>
                                 <hr style="width: 100%;">
@@ -422,13 +459,13 @@
                                     <div class="datoreDescrizioneTitolo">
                                         <h3>East China Normal University – 华东师范大学</h3>
                                         <p>Shanghai, China</p>
-                                        <p><span>Campus Abroad «Doing Business in China».</span></p>
+                                        <p class="adaptability"><span>Campus Abroad «Doing Business in China».</span></p>
                                         <hr align="left">
                                     </div>
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Social Media Marketing in China, Retail and Services Management in China, Asian Business Environment, Chinese Consumer Behaviour. </li>
+                                        <li class="chinese businessstrategy b2bmarketing">Social Media Marketing in China, Retail and Services Management in China, Asian Business Environment, Chinese Consumer Behaviour, Chinese Language. </li>
                                     </ul>
                                 </div>
                             </div>
@@ -446,16 +483,16 @@
                                         <img src="img/edu/sassari.jpg" alt="logoHES">
                                     </div>
                                     <div class="datoreDescrizioneTitolo">
-                                        <h3>University of Sassari – Faculty of Law</h3>
+                                        <h3 class="law">University of Sassari – Faculty of Law</h3>
                                         <p>Sassari, Italy</p>
-                                        <p><span>Law Master Degree – 110/110 cum laude.</span></p>
+                                        <p><span class="law">Law Master Degree – 110/110 cum laude.</span></p>
                                         <hr align="left">
                                     </div>
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>International Law, Business Law, Criminal Law, Corporate Law, Contract Law</li>
-                                        <li>Master Thesis: The Crimean Crisis at the light of International Law. </li>
+                                        <li class="law">International Law, Business Law, Criminal Law, Corporate Law, Contract Law</li>
+                                        <li class="law">Master Thesis: The Crimean Crisis at the light of International Law. </li>
                                     </ul>
                                 </div>
                                 <hr style="width: 100%;">
@@ -464,7 +501,7 @@
                                         <img src="img/edu/poitiers.jpg" alt="logoHES">
                                     </div>
                                     <div class="datoreDescrizioneTitolo">
-                                        <h3>University of Poitiers - Faculty of Law and Social Science</h3>
+                                        <h3 class="law">University of Poitiers - Faculty of Law and Social Science</h3>
                                         <p>Poitiers, France</p>
                                         <p><span>Erasmus Year Abroad.</span></p>
                                         <hr align="left">
@@ -472,7 +509,7 @@
                                 </div>
                                 <div class="mansioni">
                                     <ul>
-                                        <li>Labour Law, European Law, French Business Law</li>
+                                        <li class="law">Labour Law, European Law, French Business Law</li>
                                     </ul>
                                 </div>
                             </div>
@@ -492,7 +529,7 @@
                                     <div class="datoreDescrizioneTitolo">
                                         <h3>E. Fermi High School for Science</h3>
                                         <p>Alghero, Italy</p>
-                                        <p><span>Graduation score: 100/100 – Class representative for 2 years.</span></p>
+                                        <p><span class="leadership teamworking">Graduation score: 100/100 – Class representative for 2 years.</span></p>
                                     </div>
                                     <div class="mansioni">
                                         <ul>
@@ -508,7 +545,7 @@
                         </div>
                         <div><hr></div>
                         <div class="eachCertificationBox">
-                            <div class="eachCertification">
+                            <div class="eachCertification problem-solving">
                                 <div class="imgCertification">
                                     <img src="img/edu/gmat.JPG" alt="logoHES">
                                 </div>
@@ -517,7 +554,7 @@
                                     <p>710/800</p>
                                 </div>
                             </div>
-                            <div class="eachCertification">
+                            <div class="eachCertification english(proficient)">
                                 <div class="imgCertification">
                                     <img src="img/edu/ielts.JPG" alt="logoHES">
                                 </div>
@@ -526,7 +563,7 @@
                                     <p>7,5/9</p>
                                 </div>
                             </div>
-                            <div class="eachCertification">
+                            <div class="eachCertification french(proficient)">
                                 <div class="imgCertification">
                                     <img src="img/edu/tcf.JPG" alt="logoHES">
                                 </div>
@@ -564,7 +601,7 @@
                             <div class="activityDifferantiatorHr"><hr  align="left"></div>
                             <div class="mansioni">
                                 <ul>
-                                    <li>Created this website from scratch, took care of coding and graphics (favicon, image in the description section. Coded in HTML5, CSS3 and various Javascript libraries.</li>
+                                    <li class="problem-solving creativity html5 css3 javascript">Created this website from scratch, took care of coding and graphics (favicon, image in the description section. Coded in HTML5, CSS3 and various Javascript libraries.</li>
                                 </ul>
                             </div>
                         </div>
@@ -583,7 +620,7 @@
                             <div class="activityDifferantiatorHr"><hr  align="left"></div>
                             <div class="mansioni">
                                 <ul>
-                                    <li>Member of Young AvoTech, French Legaltech “Do-tank” for law students and young professionals.</li>
+                                    <li class="law teamworking">Member of Young AvoTech, French Legaltech “Do-tank” for law students and young professionals.</li>
                                 </ul>
                             </div>
                         </div>
@@ -593,7 +630,7 @@
                                     <img src="img/activities/cim.jpg" alt="logoHES">
                                 </div>
                                 <div class="datoreDescrizioneTitolo">
-                                    <h3>Italian Mediation Competition</h3>
+                                    <h3 class="law">Italian Mediation Competition</h3>
                                     <p>Feb 2015</p>  
                                     <p><span>Milan, Italy</span></p>
                                     <hr align="left">
@@ -602,7 +639,7 @@
                             <div class="activityDifferantiatorHr"><hr  align="left"></div>
                             <div class="mansioni">
                                 <ul>
-                                    <li>Vice-capitain of the University team that won the 3rd prize in the national competition. </li>
+                                    <li class="teamworking leadership">Vice-capitain of the University team that won the 3rd prize in the national competition. </li>
                                 </ul>
                             </div>
                         </div>
@@ -621,7 +658,7 @@
                             <div class="activityDifferantiatorHr"><hr  align="left"></div>
                             <div class="mansioni">
                                 <ul>
-                                    <li>Attended several educational simulations of UN organisms, committees and institutions.</li>
+                                    <li class="teamworking adaptability">Attended several educational simulations of UN organisms, committees and institutions.</li>
                                 </ul>
                             </div>
                         </div>
@@ -640,7 +677,7 @@
                             <div class="activityDifferantiatorHr"><hr  align="left"></div>
                             <div class="mansioni">
                                 <ul>
-                                    <li>Led the High-school team to winning the first prize in the Regional Mathematics Games and achieving the highest regional score ever.</li>
+                                    <li class="teamworking leadership problem-solving">Led the High-school team to winning the first prize in the Regional Mathematics Games and achieving the highest regional score ever.</li>
                                 </ul>
                             </div>
                         </div>   
@@ -651,49 +688,65 @@
                             <div class="interesseBox">
                                 <img src="img/activities/sleight.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Sleight-of-hand</p>
+                                        <div class="aggiustaTitoloInteresse creativity storytelling close-upmagic sleight-of-hand">
+                                            <p>Sleight-of-hand</p>    
+                                        </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/asimov.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Science-fiction<br>(mostly Asimov)</p>
+                                    <div class="aggiustaTitoloInteresse a.i.">
+                                        <p>Science-fiction<br>(mostly Asimov)</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/web.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Web-dev</p>
+                                    <div class="aggiustaTitoloInteresse html5 css3 javascript a.i.">
+                                        <p>Web-dev</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/guitar.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Guitar</p>
+                                    <div class="aggiustaTitoloInteresse">
+                                       <p>Guitar</p> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/tarantino.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Quentin Tarantino’s movies</p>
+                                    <div class="aggiustaTitoloInteresse">
+                                        <p>Quentin Tarantino’s movies</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/rugby.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Rugby</p>
+                                    <div class="aggiustaTitoloInteresse teamworking leadership">
+                                        <p>Rugby</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/athletics.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>Athletics</p>
+                                    <div class = "aggiustaTitoloInteresse">
+                                        <p>Athletics</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="interesseBox">
                                 <img src="img/activities/international.JPG" alt="">
                                 <div class="titoloInteresse">
-                                    <p>International Relations</p>
+                                    <div class = "aggiustaTitoloInteresse">
+                                        <p>International Relations</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="rightBordCreator">.</div>
@@ -702,6 +755,7 @@
                 </div>
             </div>
         </main>
+        
         <footer>
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@mischievous_penguins?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Casey Horner"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Casey Horner</span></a>
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@nasa?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from NASA"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">NASA</span></a>
@@ -713,6 +767,14 @@
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@svi_designs?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Sergi Viladesau"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Sergi Viladesau</span></a>
             <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@tracycodes?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Tracy Adams"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Tracy Adams</span></a>        
         </footer>
+        <div id="sticky">
+            <div id="chiudi">
+                <i id="chiudi" class='fas fa-times'></i>
+            </div>
+            <div id="next">
+                <p>next</p>
+            </div>
+        </div>
         <script src="" async defer></script>
         <script>
                /* -----------------------------------------------
@@ -2394,6 +2456,98 @@ particlesJS('particles-js',
         </script>
         <script>
             !function(e,n){"function"==typeof define&&define.amd?define(["exports"],n):n("undefined"!=typeof exports?exports:e.dragscroll={})}(this,function(e){var n,t,o=window,l=document,c="mousemove",r="mouseup",i="mousedown",m="EventListener",d="add"+m,s="remove"+m,f=[],u=function(e,m){for(e=0;e<f.length;)m=f[e++],m=m.container||m,m[s](i,m.md,0),o[s](r,m.mu,0),o[s](c,m.mm,0);for(f=[].slice.call(l.getElementsByClassName("dragscroll")),e=0;e<f.length;)!function(e,m,s,f,u,a){(a=e.container||e)[d](i,a.md=function(n){e.hasAttribute("nochilddrag")&&l.elementFromPoint(n.pageX,n.pageY)!=a||(f=1,m=n.clientX,s=n.clientY,n.preventDefault())},0),o[d](r,a.mu=function(){f=0},0),o[d](c,a.mm=function(o){f&&((u=e.scroller||e).scrollLeft-=n=-m+(m=o.clientX),u.scrollTop-=t=-s+(s=o.clientY),e==l.body&&((u=l.documentElement).scrollLeft-=n,u.scrollTop-=t))},0)}(f[e++])};"complete"==l.readyState?u():o[d]("load",u,0),e.reset=u});
+        </script>
+        <script>
+            //TROS DE BURDELL
+
+
+            //DEFINITIONS
+            let howIMetTheSkill = [];
+            let idx = 0;
+
+            const circoscrizione = document.getElementById("areaLimiteClick");
+            const rinvioASkills = document.getElementById("1");
+            const doublecheck = "specificSkill";
+            const sticky = document.getElementById("sticky");
+            const chiudi = document.getElementById("chiudi");
+            const next = document.getElementById("next");
+
+            const isSkill = (a, b, c) => {
+              if (a === c || b === c) {
+                return true
+              };
+            }
+
+            const testLog = (x) => document.getElementById("demo").innerHTML = x;
+            const evidenziaSkill = (a) => a.classList += " skillTrovata";
+            const disevidenziaSkill = (a) => a.classList.remove("skillTrovata");
+            const evidenziaArraySkills = (a) => {
+              a = a;
+              for (let i=0; i<a.length; i++) {
+              evidenziaSkill(a[i]);
+              }
+            }
+
+            const disevidenziaArraySkills = (a) => {
+              a = a;
+              for (let i=0; i<a.length; i++) {
+              disevidenziaSkill(a[i]);
+              }
+            }
+
+            const mostraSticky = () => {
+              sticky.style.display = "flex";
+            }
+
+            const nascondiSticky = () => {
+              sticky.style.display = "none";
+            }
+
+            const identificaSkill = (e) => {
+              let target = e.target || e.srcElement; //trova l'elemento che ha triggerato l'evento
+              let controllo = target.parentNode.className; 
+              let controlloAltro = target.className;
+              let text = target.textContent.toLowerCase().replace(/ +/g, "") || target.innerText.toLowerCase().replace(/ +/g, "");
+
+              if (isSkill(controllo, controlloAltro, doublecheck)){  //se clicchi su un bottone
+                disevidenziaArraySkills(howIMetTheSkill);
+                howIMetTheSkill = document.getElementsByClassName(text);
+                if (howIMetTheSkill.length != 0){ //evitare che il bottone si apra se nn ci sono skills
+                  evidenziaArraySkills(howIMetTheSkill);
+                  mostraSticky();
+                  howIMetTheSkill[0].scrollIntoView();
+                }
+              };
+
+
+            }
+
+            const goToNext = (a) => {
+              let b = a.length -1;
+              if (idx === b) {
+                idx = 0;
+              } else {
+                idx++;
+              }
+              howIMetTheSkill[idx].scrollIntoView();
+            }
+
+
+            circoscrizione.addEventListener('click', function(e) {
+              e = e || window.event;
+              identificaSkill(e);
+            }, false);
+
+            chiudi.addEventListener('click', function() {
+              nascondiSticky();
+              disevidenziaArraySkills(howIMetTheSkill);
+              idx = 0;
+              rinvioASkills.scrollIntoView();
+            }, false);
+
+            next.addEventListener('click', function() {
+              goToNext(howIMetTheSkill);
+            }, false);
         </script>
     </body>
 </html>
