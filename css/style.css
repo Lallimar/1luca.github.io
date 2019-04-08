@@ -938,8 +938,27 @@ grid-auto-rows: auto;
  }
 
 footer {
-  height: 400px;
+  height: auto;
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+  padding: 30px;
   background-color: #1e2f92;
+  background-image: linear-gradient(to left top,#001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
+}
+
+footer a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: aqua;
+}
+ 
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
 }
  
 
