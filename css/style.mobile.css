@@ -13,75 +13,7 @@
         text-align: center;
         }
 
-    .inAlto:hover {
-        grid-row-start: 2;
-        grid-row-end: 4; 
-    }
     
-    .inBasso:hover {
-        grid-row-start: 5;
-        grid-row-end: 7;
-    }
-    
-    .dx:hover {
-        grid-column-start: 5;
-        grid-column-end: 7;
-        animation: none;
-    }
-    
-    .sx:hover {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        animation: none;
-    }
-    
-    #inAltoSx:hover, #inBassoSx:hover, #inAltoDx:hover, #inBassoDx:hover {
-        animation: none;
-    }
-
-    .descrizione {
-        height: auto;
-        background-image: radial-gradient(ellipse at center, #001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr;
-      }
-      
-           
-      .descrizione p { 
-        grid-column-start: 1;
-        grid-row-start: 2;
-        z-index: 2;
-        color: white;
-        margin: 20px;
-        text-align: justify;
-        align-self: center;
-        justify-self: center;
-        padding: 10px;
-      }
-      
-      .descrizione img { 
-        width: 70%;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        z-index: 2;
-        align-self: end;
-        justify-self: center;
-        margin-top: 40px;
-      }
-      
-      #sfondoDescrizione { 
-        width: 100%;
-        height: 100%;
-        opacity: 0.2;
-        filter: grayscale(1);
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        z-index: 1;
-        margin: 0;
-      }
 
       .titoloSezione {
         text-align: center;
