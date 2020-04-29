@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Smart CV</title>
+        <title>My Augmented CV</title>
         <meta name="description" content="Skills-based smart resume of a cool, coffe-lover salesperson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -25,47 +25,19 @@
                         <li class = "navIcon" id = "contactIcon"><a href="mailto:1luca.marongiu@gmail.com"><i class="far fa-envelope-open"></i></a></li>                
                     </ul>
                 </nav>
-                <div class="hero">
-                    <div class="heroIntWrapperExt">
-                        <div id="GranTitolo">
-                            <h1>Smart CV</h1>
-                            <p>Just relax. It'll connect the dots for you.</p>
-                        </div>
-                        <div class="heroIntWrapperInt">
-                                <div id = "center">
-                                    <h3>Luca Marongiu</h3>
-                                    <p>Sales - Digital - A.I. - Green Energy - Legal - Start-up</p>
-                                </div>
-                                <div id="inAltoSx" class="categoria inAlto sx" onclick="document.getElementById('1').scrollIntoView()">
-                                    <img src="img/header/categoria1.JPG" alt="">
-                                    <p>Skills</p>
-                                </div>
-                                <div id="inAltoDx" class="categoria inAlto dx" onclick="document.getElementById('2').scrollIntoView()">
-                                    <img src="img/header/categoria2.JPG" alt="Work Experience">
-                                    <p>Work Experience</p>
-                                </div>
-                                <div id="inBassoDx" class="categoria inBasso dx" onclick="document.getElementById('3').scrollIntoView()">
-                                    <img src="img/header/categoria3.JPG" alt="">
-                                    <p>Education</p>
-                                </div>
-                                <div id="inBassoSx" class="categoria inBasso sx" onclick="document.getElementById('4').scrollIntoView()">
-                                    <img src="img/header/categoria4.JPG" alt="">
-                                    <p>Activities & Interests</p>
-                                </div>
-                        </div>                            
-                    </div>  
-                    <i id = "freccia" class = "fa fa-chevron-down" onclick="document.getElementById('sfondoDescrizione').scrollIntoView()"></i>               
-                </div>
+                <div id="hero">
+						<h1>Augmented CV</h1>
+						<p>Just relax. It'll connect the dots for you.</p>
+						<div id="barraAndBtn">
+							<input id="barraRicerca" placeholder="Search e.g. project management"></input>
+							<button id="go"><i class="fa fa-search"></i></button>
+						</div>
+						<div id ="dD"></div>
+						<h1 id="test"></h1>              
+			    </div>
             </header>
         </div>
         <main>
-            <div class="descrizione">
-                <img id="sfondoDescrizione" src="img/descrizione/hyperspace.JPG" alt="">
-                <img src="img/descrizione/visualDescription.png" alt="">
-                <p>
-                    Hey guys, welcome to my resume!<br><br>Enjoy exploring the different sections (there are <a href="#sc">short-cut buttons</a> in the section above), or, if you are running short on time, try the automatic mode. How does it work?<br><br>Just go to the Skills section (<a href="#1">below</a>) and search for the skills or competences you are interested in. You can swipe the Skills section horizontally to reveal more categories. Once you've found the one you were looking for, click on it: the complex algorithm (just kidding, it is actually less than 100 lines of code) will bring you directly to the area of the CV highliting how I aquired a particular expertise or put it to good use.<br><br>You can use the "next" button that will appear on the bottom-right of the page, or you can scroll up and down yourself. When you are done, click on the "x" symbol above the "next" button, and go to another skill!
-                </p>
-            </div>
             <div class="corpoCV">
                 <div id="1" class="Skills">
                     <div class="titoloSezione">
