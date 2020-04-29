@@ -224,9 +224,14 @@
 }
 
 @media screen and (max-height: 640px) {
-    body {
+    
+     body {
         font-size: 12px;
     }
+     
+     .animazione {
+     size: 100%;
+     }
      
       #barraRicerca{
          width: 230px;
@@ -244,6 +249,10 @@
     body {
         font-size: 12px;
     }
+     
+     .animazione {
+     size: 100%;
+     }
      
       #barraRicerca{
          width: 260px;
