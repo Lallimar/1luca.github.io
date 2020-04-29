@@ -4,10 +4,6 @@
         font-size: 12px;
     }
      
-     .animazione {
-     size: 100%;
-     }
-     
     .navTesto {
         display: none;
     }
@@ -228,11 +224,6 @@
      body {
         font-size: 12px;
     }
-     
-     .animazione {
-     size: 100%;
-     }
-     
       #barraRicerca{
          width: 230px;
      }
@@ -249,10 +240,6 @@
     body {
         font-size: 12px;
     }
-     
-     .animazione {
-     size: 100%;
-     }
      
       #barraRicerca{
          width: 260px;
