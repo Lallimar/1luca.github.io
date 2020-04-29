@@ -3,7 +3,11 @@
     body {
         font-size: 12px;
     }
-    
+     
+     .animazione {
+     size: 100%;
+     }
+     
     .navTesto {
         display: none;
     }
