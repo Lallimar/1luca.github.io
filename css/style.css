@@ -74,8 +74,8 @@ hr {
   height: 100vh;
   background-color: #ffffff;
   background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
+  background-size: 100% 50%;
+  background-position: left bottom;
   background-repeat: no-repeat;
   z-index: -1;
 }
