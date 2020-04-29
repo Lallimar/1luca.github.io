@@ -2443,93 +2443,264 @@ particlesJS('particles-js',
             //TROS DE BURDELL
 
 
-            //DEFINITIONS
-            let howIMetTheSkill = [];
-            let idx = 0;
+		//DEFINITIONS
+		let howIMetTheSkill = [];
+		let idx = 0;
 
-            const circoscrizione = document.getElementById("areaLimiteClick");
-            const rinvioASkills = document.getElementById("1");
-            const doublecheck = "specificSkill";
-            const sticky = document.getElementById("sticky");
-            const chiudi = document.getElementById("chiudi");
-            const next = document.getElementById("next");
+		
 
-            const isSkill = (a, b, c) => {
-              if (a === c || b === c) {
-                return true
-              };
-            }
+		const circoscrizione = document.getElementById("areaLimiteClick");
+		const rinvioASkills = document.getElementById("1");
+		const doublecheck = "specificSkill";
+		const sticky = document.getElementById("sticky");
+		const chiudi = document.getElementById("chiudi");
+		const next = document.getElementById("next");
 
-            const testLog = (x) => document.getElementById("demo").innerHTML = x;
-            const evidenziaSkill = (a) => a.classList += " skillTrovata";
-            const disevidenziaSkill = (a) => a.classList.remove("skillTrovata");
-            const evidenziaArraySkills = (a) => {
-              a = a;
-              for (let i=0; i<a.length; i++) {
-              evidenziaSkill(a[i]);
-              }
-            }
+		
 
-            const disevidenziaArraySkills = (a) => {
-              a = a;
-              for (let i=0; i<a.length; i++) {
-              disevidenziaSkill(a[i]);
-              }
-            }
+		const isSkill = (a, b, c) => {
+		  if (a === c || b === c) {
+			return true
+		  };
+		}
 
-            const mostraSticky = () => {
-              sticky.style.display = "flex";
-            }
+		const testLog = (x) => document.getElementById("demo").innerHTML = x;
+		const evidenziaSkill = (a) => a.classList += " skillTrovata";
+		const disevidenziaSkill = (a) => a.classList.remove("skillTrovata");
+		const evidenziaArraySkills = (a) => {
+		  a = a;
+		  for (let i=0; i<a.length; i++) {
+		  evidenziaSkill(a[i]);
+		  }
+		}
 
-            const nascondiSticky = () => {
-              sticky.style.display = "none";
-            }
+		const disevidenziaArraySkills = (a) => {
+		  a = a;
+		  for (let i=0; i<a.length; i++) {
+		  disevidenziaSkill(a[i]);
+		  }
+		}
 
-            const identificaSkill = (e) => {
-              let target = e.target || e.srcElement; //trova l'elemento che ha triggerato l'evento
-              let controllo = target.parentNode.className; 
-              let controlloAltro = target.className;
-              let text = target.textContent.toLowerCase().replace(/ +/g, "") || target.innerText.toLowerCase().replace(/ +/g, "");
+		const mostraSticky = () => {
+		  sticky.style.display = "flex";
+		}
 
-              if (isSkill(controllo, controlloAltro, doublecheck)){  //se clicchi su un bottone
-                disevidenziaArraySkills(howIMetTheSkill);
-                howIMetTheSkill = document.getElementsByClassName(text);
-                if (howIMetTheSkill.length != 0){ //evitare che il bottone si apra se nn ci sono skills
-                  evidenziaArraySkills(howIMetTheSkill);
-                  mostraSticky();
-                  howIMetTheSkill[0].scrollIntoView();
-                }
-              };
+		const nascondiSticky = () => {
+		  sticky.style.display = "none";
+		}
 
+		const identificaSkill = (e) => {
+		  let target = e.target || e.srcElement; //trova l'elemento che ha triggerato l'evento
+		  let controllo = target.parentNode.className; 
+		  let controlloAltro = target.className;
+		  let text = target.textContent.toLowerCase().replace(/ +/g, "") || target.innerText.toLowerCase().replace(/ +/g, "");
 
-            }
-
-            const goToNext = (a) => {
-              let b = a.length -1;
-              if (idx === b) {
-                idx = 0;
-              } else {
-                idx++;
-              }
-              howIMetTheSkill[idx].scrollIntoView();
-            }
+		  if (isSkill(controllo, controlloAltro, doublecheck)){  //se clicchi su un bottone
+			disevidenziaArraySkills(howIMetTheSkill);
+			howIMetTheSkill = document.getElementsByClassName(text);
+			if (howIMetTheSkill.length != 0){ //evitare che il bottone si apra se nn ci sono skills
+			  evidenziaArraySkills(howIMetTheSkill);
+			  mostraSticky();
+			  howIMetTheSkill[0].scrollIntoView();
+			}
+		  };
 
 
-            circoscrizione.addEventListener('click', function(e) {
-              e = e || window.event;
-              identificaSkill(e);
-            }, false);
+		}
 
-            chiudi.addEventListener('click', function() {
-              nascondiSticky();
-              disevidenziaArraySkills(howIMetTheSkill);
-              idx = 0;
-              rinvioASkills.scrollIntoView();
-            }, false);
+		const goToNext = (a) => {
+		  let b = a.length -1;
+		  if (idx === b) {
+			idx = 0;
+		  } else {
+			idx++;
+		  }
+		  howIMetTheSkill[idx].scrollIntoView();
+		  /*
+		  let sPV = howIMetTheSkill[idx].offsetTop - 50
+		  let sPO = howIMetTheSkill[idx].offsetLeft 
+		  window.scrollTo(0, sPV)
+		  */
+		}
 
-            next.addEventListener('click', function() {
-              goToNext(howIMetTheSkill);
-            }, false);
+
+		circoscrizione.addEventListener('click', function(e) {
+		  e = e || window.event;
+		  identificaSkill(e);
+		}, false);
+
+		chiudi.addEventListener('click', function() {
+		  nascondiSticky();
+		  disevidenziaArraySkills(howIMetTheSkill);
+		  idx = 0;
+		  rinvioASkills.scrollIntoView();
+		}, false);
+
+		next.addEventListener('click', function() {
+		  goToNext(howIMetTheSkill);
+		}, false);
+
+
+		//ricerca
+
+		
+		
+		
+			 
+		
+		const barraRicerca = document.getElementById('barraRicerca')
+		let dD = document.getElementById('dD')
+		let tester = document.getElementById('test')
+		let dDArray = []
+		let iDD = 0
+		let btnGo = document.getElementById('go')
+		let shallBtnGo = false
+		let skillsPerRicerca = Array.from(document.querySelectorAll('div.specificSkill p')).map((sk) => sk.innerText.trim())
+		
+		//creare una classe elemento
+		class suggerimento {
+		  constructor (vlr, inp) {
+			   this.vlr = vlr
+			   this.spn = vlr.substr(0, inp.length)
+			   this.rst = vlr.substr(inp.length, vlr.length)
+			   this.classe = "skillDD"
+		  }
+		}
+		
+		//creare un nuovo array delle sole parole che hanno che corrispondono parzialmente alla ricerca
+		
+		const createDDArray = (inp, controllo) => {
+		  dDArray = []
+		 controllo.forEach(skill => {
+			if (skill.substr(0, inp.length).toLowerCase() == inp.toLowerCase()) dDArray.push(new suggerimento(skill, inp))
+		  
+			})
+		}
+		
+		//creare un elemento per ogni item di dDArray
+		 const createSkillDD = (sug) => {
+		   let sp = document.createElement("SPAN")
+		   sp.innerHTML = sug.spn
+		   sp.classList.add("inComune")
+		   let re = document.createElement("SPAN")
+		   re.innerHTML = sug.rst
+		   let p =document.createElement("P")
+		   p.classList.add(sug.classe)
+		   p.id = sug.vlr
+		   p.appendChild(sp)
+		   p.appendChild(re)
+		   return p
+		 }
+		
+		 //pulisci dD div
+		 const pulisciDD = () => {
+		   while (dD.firstChild) {
+			dD.removeChild(dD.lastChild)
+		  }
+		   dDArray = []
+		   iDD = 0
+		 }
+		 
+		//lancia funzione finale
+		const lanciaFF = () => {
+		  let cntrl = false
+		  dDArray.forEach(skill => {
+			if (skill.vlr.toLowerCase() == barraRicerca.value.toLowerCase()) {
+			  cntrl = true
+			  tester.innerHTML = skill.vlr
+			  pulisciDD()
+			  shallBtnGo = false
+			}
+		  })
+			if (!cntrl) {
+			barraRicerca.innerHTML = 'That one, I still have to learn'
+			shallBtnGo = false
+		  } 
+		  }
+		
+		//eventListener per quando l'input viene usato e prendere valore
+		barraRicerca.addEventListener('input', () => {
+		  pulisciDD()
+		  iDD = 0
+		  
+		  createDDArray(barraRicerca.value.trim(), skillsPerRicerca)
+			dDArray.forEach(skill => {
+			  let skillDD = createSkillDD(skill)
+			  dD.appendChild(skillDD)
+			})
+		  
+		  if (barraRicerca.value.length <= 0) {
+			pulisciDD()
+		  } 
+		 
+		}, false)
+		
+		
+		
+		barraRicerca.addEventListener("keydown", (e) => {
+		  let inCom = Array.from(document.getElementsByClassName("skillDD"))
+		   if (e.keyCode == 40) { //giù
+			 iDD < inCom.length ? iDD++ : iDD = 1
+			 inCom.forEach(skill => {
+			   skill.classList.remove("focusDD")
+			 })
+			 inCom[iDD-1].className += " focusDD"
+			  } else if (e.keyCode == 38) { //sù
+				iDD <= 1  ? iDD = inCom.length : iDD--
+			 inCom.forEach(skill => {
+			   skill.classList.remove("focusDD")
+			 })
+			 inCom[iDD-1].className += " focusDD"
+			  } else if (e.keyCode == 13) { //invio
+				if(!dD.hasChildNodes() && shallBtnGo){
+					ricercaToSkills()
+					shallBtnGo = false
+					pulisciDD()
+					inCom = []
+					barraRicerca.value = ''
+				} else if(dD.hasChildNodes()) {
+					barraRicerca.value = inCom[iDD -1].id
+					pulisciDD() 
+					inCom = []
+					shallBtnGo = true
+				}
+			  }
+		}, false) 
+
+		const ricercaToSkills = () => {
+			let skillToGoTo = barraRicerca.value.toLowerCase().replace(/ +/g, '')
+			disevidenziaArraySkills(howIMetTheSkill);
+			howIMetTheSkill = document.getElementsByClassName(skillToGoTo);
+			if (howIMetTheSkill.length != 0){ //evitare che il bottone si apra se nn ci sono skills
+			evidenziaArraySkills(howIMetTheSkill);
+			mostraSticky();
+			howIMetTheSkill[0].scrollIntoView();
+			}
+		}
+		
+
+		btnGo.addEventListener('click', () =>{
+			ricercaToSkills()
+		}, false)
+		  
+		dD.addEventListener('click', (e) => {
+			let target = e.target || e.srcElement
+			let testo = target.tagName != 'SPAN' ? target.innerText : target.parentNode.innerText
+				barraRicerca.value = testo
+				pulisciDD() 
+				inCom = []
+				shallBtnGo = true
+		} ,false)
+
+		document.getElementById("hero").addEventListener('click', (e) => {
+			let target = e.target || e.srcElement
+			if (target.id != 'barraRicerca' || target.id != 'go' || target.id != 'dD' || target.tagName != 'SPAN') {
+				pulisciDD()
+			}
+		}, false)
+
+
+		
         </script>
     </body>
 </html>
