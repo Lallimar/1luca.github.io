@@ -26,15 +26,15 @@
                     </ul>
                 </nav>
                 <div id="hero">
-						<h1>Augmented CV</h1>
-						<p>Just relax. It'll connect the dots for you.</p>
-						<div id="barraAndBtn">
-							<input id="barraRicerca" placeholder="Search skill (e.g. project management)"></input>
-							<button id="go"><i class="fa fa-search"></i></button>
-						</div>
-						<div id ="dD"></div>
-						<h1 id="test"></h1>              
-			    </div>
+			<h1>Augmented CV</h1>
+			<p>Just relax. It'll connect the dots for you.</p>
+			<div id="barraAndBtn">
+				<input id="barraRicerca" placeholder="Search skill (e.g. project management)"></input>
+				<button id="go"><i class="fa fa-search"></i></button>
+			</div>
+			<div id ="dD"></div>
+			<h1 id="test"></h1>              
+	    	</div>
             </header>
         </div>
         <main>
@@ -2687,10 +2687,11 @@ particlesJS('particles-js',
 			let target = e.target || e.srcElement
 			let testo = target.tagName != 'SPAN' ? target.innerText : target.parentNode.innerText
 				barraRicerca.value = testo
-				setTimeout(ricercaToSkills(), 300)
 				pulisciDD() 
 				inCom = []
-				shallBtnGo = true
+				//shallBtnGo = true
+				setTimeout(ricercaToSkills(), 300)
+				barraRicerca.value = ''
 		} ,false)
 
 		document.getElementById("hero").addEventListener('click', (e) => {
