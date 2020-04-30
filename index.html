@@ -2687,6 +2687,7 @@ particlesJS('particles-js',
 			let target = e.target || e.srcElement
 			let testo = target.tagName != 'SPAN' ? target.innerText : target.parentNode.innerText
 				barraRicerca.value = testo
+				setTimeout(ricercaToSkills(), 300)
 				pulisciDD() 
 				inCom = []
 				shallBtnGo = true
