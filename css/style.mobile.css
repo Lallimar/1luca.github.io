@@ -2,11 +2,10 @@
      
     body {
         font-size: 12px;
-         height: 700px;
     }
      
     .animazione {
-          height: 110%;     
+          height: 700px;     
      }
      
     .navTesto {
@@ -228,11 +227,10 @@
     
      body {
         font-size: 12px;
-          height: 100%;
     }
      
      .animazione {
-          height: 110%;     
+          height: 700px;     
      }
      
       #barraRicerca{
@@ -250,11 +248,10 @@
 
     body {
         font-size: 12px;
-         height: 100%;
     }
      
      .animazione {
-          height: 110%;     
+          height: 500px;     
      }
      
       #barraRicerca{
