@@ -8,6 +8,14 @@
           height: 700px;     
      }
      
+     header{
+          height: 100%
+     }
+     
+     #hero {
+          background
+     }
+     
     .navTesto {
         display: none;
     }
@@ -233,6 +241,10 @@
           height: 700px;     
      }
      
+      header{
+          height: 100%
+     }
+     
       #barraRicerca{
          width: 230px;
      }
@@ -252,6 +264,10 @@
      
      .animazione {
           height: 500px;     
+     }
+     
+      header{
+          height: 100%
      }
      
       #barraRicerca{
