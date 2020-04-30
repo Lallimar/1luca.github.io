@@ -2,7 +2,12 @@
      
     body {
         font-size: 12px;
+         height: 100%;
     }
+     
+    .animazione {
+          height: 110%;     
+     }
      
     .navTesto {
         display: none;
@@ -223,7 +228,13 @@
     
      body {
         font-size: 12px;
+          height: 100%;
     }
+     
+     .animazione {
+          height: 110%;     
+     }
+     
       #barraRicerca{
          width: 230px;
      }
@@ -239,7 +250,12 @@
 
     body {
         font-size: 12px;
+         height: 100%;
     }
+     
+     .animazione {
+          height: 110%;     
+     }
      
       #barraRicerca{
          width: 260px;
