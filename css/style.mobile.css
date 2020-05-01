@@ -84,6 +84,10 @@
 	   background-image: linear-gradient(to top,  #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
     
     }
+	
+     #ultimoLavoro .linea {
+       grid-row-end: 3;
+   }
     
     .data {
         grid-column-start: 1;
