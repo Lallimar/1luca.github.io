@@ -582,7 +582,7 @@ grid-auto-rows: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #ABC3CE;
-  background-image: radial-gradient(ellipse at center,#7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+  background-image: linear-gradient(to left top, #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
 }
 
 .interesseBox:first-child {
@@ -656,7 +656,7 @@ grid-auto-rows: auto;
 }
 
 #next {
-  background-color: aqua;
+  background-color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -664,7 +664,7 @@ grid-auto-rows: auto;
   width: 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation: wobble-hor-top 0.8s 3s both;
-	        animation: wobble-hor-top 0.8s 3s both;
+  animation: wobble-hor-top 0.8s 3s both;
 }
 
 #next p {
