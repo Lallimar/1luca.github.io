@@ -80,8 +80,8 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-color: #ABC3CE;
-	   background-image: linear-gradient(to top,  #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+        background-color: #726fb9;
+	   background-image: linear-gradient(to top, #726fb9,  #9874c8, #9874c8, #d857df);
     
     }
 	
