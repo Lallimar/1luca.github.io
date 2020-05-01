@@ -350,8 +350,8 @@ nav {
   padding: 0 5px;
   text-align: center;
   border-radius: 5px;
-  background-color: #7B8FA5;
-  background-image: linear-gradient(to left top, #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+  background-color: #726fb9;
+  background-image: linear-gradient(to left top, #726fb9,  #9874c8, #9874c8, #d857df);
   cursor: pointer;
 }
 
@@ -391,13 +391,13 @@ grid-auto-rows: auto;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: #ABC3CE;
-  background-image: linear-gradient(to top, #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+  background-color: #726fb9;
+  background-image: linear-gradient(to top, #726fb9,  #9874c8, #9874c8, #d857df);
 }
 
 .containerLavoro:nth-child(2n+0) .linea {
- background-color: #ABC3CE;
- background-image: linear-gradient(to bottom,#7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+ background-color: #726fb9;
+ background-image: linear-gradient(to bottom, #726fb9, #9874c8, #9874c8, #d857df);
 }
 
 #ultimoLavoro .linea {
@@ -581,8 +581,8 @@ grid-auto-rows: auto;
   align-items: center;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #ABC3CE;
-  background-image: linear-gradient(to left top, #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+  background-color: #726fb9;
+  background-image: linear-gradient(to left top, #726fb9,  #9874c8, #9874c8, #d857df);
 }
 
 .interesseBox:first-child {
@@ -635,8 +635,8 @@ grid-auto-rows: auto;
 }
 
 #chiudi {
-  background-color: #ABC3CE;
-  background-image: linear-gradient(to top left,#7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+  background-color: #726fb9;
+  background-image: linear-gradient(to top left, #726fb9,  #9874c8, #9874c8, #d857df);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: center;
@@ -686,8 +686,8 @@ footer {
   text-align: center;
   color: white;
   padding: 30px;
-  background-color: #ABC3CE;
-  background-image: linear-gradient(to left top, #7B8FA5, #726fb9,  #9874c8, #9874c8, #d857df);
+  background-color: #726fb9;
+  background-image: linear-gradient(to left top, #726fb9,  #9874c8, #9874c8, #d857df);
 }
 
 footer a:link, footer a:visited, footer a:active {
