@@ -183,43 +183,54 @@ nav {
  } 
 
 #barraAndBtn {
+	height: 70px;
+	overflow: visible;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid lightgrey;
-	border-radius: 15px;
+	border: 0px;
 	overflow: hidden;
 	padding: 0px;
+	padding-right: 10px;
 }
 
   #barraRicerca {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1em;
-	color: #333;
 	width: 260px;
 	height: 40px;
 	padding-left: 10px;
 	margin: 0px;
-	border: 0px;
+	margin-right: 15px;
+	border: 1px solid lightgrey;
+	border-radius: 15px;
 	text-align: center;
   }
 
-  #barraRicerca:active {
+  #barraRicerca:active, #go:active {
 	  outline: none;
   }
 
-  #barraRicerca:focus {
+  #barraRicerca:focus, #go:focus {
 	outline: none;
 }
 
+#barraRicerca:focus + #go {
+	transform: translateY(-3px);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.5s ease-in;
+}
+
   #go {
-	height: 40px;
-	width: 40px;
+	height: 45px;
+	width: 45px;
 	margin: 0px;
 	text-align: center;
-	border: 0px;
-	background-color: white;
+	border: 1px solid aquamarine;
+	border-radius: 50%;
+	background-color: aquamarine;
 	cursor: pointer;
+	transition: 0.5s ease-in;
   }
 
   #go i {
