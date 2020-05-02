@@ -108,7 +108,7 @@ hr {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* CANVAS PER L'ANIMAZIONE */
@@ -137,7 +137,7 @@ header {
     grid-row-end: 2;
     width: 100vw;
     height: 100vh;
-    overflow: visible;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20px auto 1fr;
