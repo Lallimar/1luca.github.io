@@ -106,7 +106,7 @@ hr {
   height: 720px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 720px;
   justify-items: center;
   overflow: hidden;
 }
@@ -305,6 +305,8 @@ nav {
 
 
 /* GENERALE SEZIONI DEL CORPO CV */
+
+main {
 
 .titoloSezione hr {
   width: 70%;
