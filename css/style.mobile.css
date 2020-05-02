@@ -1,7 +1,7 @@
 @media screen and (max-width: 600px) {
      
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
      
     .animazione {
@@ -237,7 +237,7 @@
 @media screen and (max-height: 640px) {
     
      body {
-        font-size: 12px;
+        font-size: 14px;
     }
      
      .animazione {
@@ -262,7 +262,7 @@
 @media screen and (max-height:450px) and (orientation: landscape) {
 
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
      
      .animazione {
@@ -271,6 +271,14 @@
      
       header{
           height: 100%
+     }
+
+	 #barraRicerca{
+         width: 260px;
+     }
+     
+     #dD {
+          width: 260px;
      }
 
     nav {
