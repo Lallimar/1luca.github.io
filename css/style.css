@@ -306,6 +306,10 @@ nav {
 
 /* GENERALE SEZIONI DEL CORPO CV */
 
+main {
+	position: absolute;
+}
+
 .titoloSezione hr {
   width: 70%;
   margin-left: 10%;
