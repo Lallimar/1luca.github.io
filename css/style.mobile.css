@@ -253,11 +253,11 @@
      }
      
       #barraRicerca{
-         width: 230px;
+         width: 220px;
      }
      
      #dD {
-          width: 270px;
+          width: 220px;
      }
 
 
@@ -275,14 +275,6 @@
      
       header{
           height: 100%
-     }
-     
-      #barraRicerca{
-         width: 260px;
-     }
-     
-     #dD {
-          width: 300px;
      }
 
     nav {
