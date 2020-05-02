@@ -53,7 +53,13 @@ a:link, a:visited, a:hover, a:active {
 			  transform: translateX(-6px) rotate(1.2deg);
 	}
   }
-
+	 
+	@keyframes pop {
+		0%  {transform: scale(0);}
+		60%  {transform: scale(1.2);}
+		80%  {transform: scale(0.8);}
+		100%  {transform: scale(1);}
+  }
 
 /* GENERALE */
 
@@ -243,9 +249,6 @@ nav {
 	  color: #333;
   }
   
-  #go:hover i{
-	font-size: 30px;
-}
 
   #dD {
 	margin-top: 15px;
@@ -661,6 +664,7 @@ grid-auto-rows: auto;
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  animation:  pop 0.5s ease 1;
 }
 
 #chiudi i {
