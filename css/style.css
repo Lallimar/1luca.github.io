@@ -79,7 +79,7 @@ a:link, a:visited, a:hover, a:active {
 
 h1 {
     font-family: 'Cabin', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 h2 {
@@ -200,7 +200,8 @@ nav {
  }
 
  #hero p {
-	margin: 20px 0px;
+	font-size: 2em;
+	 margin: 20px 0px;
  } 
 
 #barraAndBtn {
