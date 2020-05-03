@@ -1,3 +1,60 @@
+
+ 
+  /*ANIMAZIONI*/
+  
+  @keyframes wobble-hor-top {
+	0%,
+	100% {
+	  -webkit-transform: translateX(0%);
+			  transform: translateX(0%);
+	  -webkit-transform-origin: 50% 50%;
+			  transform-origin: 50% 50%;
+	}
+	15% {
+	  -webkit-transform: translateX(-30px) rotate(6deg);
+			  transform: translateX(-30px) rotate(6deg);
+	}
+	30% {
+	  -webkit-transform: translateX(15px) rotate(-6deg);
+			  transform: translateX(15px) rotate(-6deg);
+	}
+	45% {
+	  -webkit-transform: translateX(-15px) rotate(3.6deg);
+			  transform: translateX(-15px) rotate(3.6deg);
+	}
+	60% {
+	  -webkit-transform: translateX(9px) rotate(-2.4deg);
+			  transform: translateX(9px) rotate(-2.4deg);
+	}
+	75% {
+	  -webkit-transform: translateX(-6px) rotate(1.2deg);
+			  transform: translateX(-6px) rotate(1.2deg);
+	}
+  }
+	 
+	@keyframes pop {
+		0%  {transform: scale(0);}
+		60%  {transform: scale(1.2);}
+		80%  {transform: scale(0.8);}
+		100%  {transform: scale(1);}
+  }
+
+
+ @keyframes bounce {
+	0%, 2.5%, 7.5%, 12.5%, 100% {
+		transform: translateX(0) translateY(-3px);
+	  }
+	  5% {
+		transform: translateX(-3px) translateY(-3px);
+	  }
+	  10% {
+		transform: translateX(-3px) translateY(-3px);
+	  }
+  }
+ 
+    /* GENERALE */
+
+
 html {
 	scroll-behavior: smooth;
 	font-size: 16px;
@@ -22,61 +79,7 @@ html {
 	width: 0px;
   }
   */
-  
-  /*ANIMAZIONI*/
-  
-  @keyframes wobble-hor-top {
-	  0%,
-	  100% {
-		-webkit-transform: translateX(0%);
-				transform: translateX(0%);
-		-webkit-transform-origin: 50% 50%;
-				transform-origin: 50% 50%;
-	  }
-	  15% {
-		-webkit-transform: translateX(-30px) rotate(6deg);
-				transform: translateX(-30px) rotate(6deg);
-	  }
-	  30% {
-		-webkit-transform: translateX(15px) rotate(-6deg);
-				transform: translateX(15px) rotate(-6deg);
-	  }
-	  45% {
-		-webkit-transform: translateX(-15px) rotate(3.6deg);
-				transform: translateX(-15px) rotate(3.6deg);
-	  }
-	  60% {
-		-webkit-transform: translateX(9px) rotate(-2.4deg);
-				transform: translateX(9px) rotate(-2.4deg);
-	  }
-	  75% {
-		-webkit-transform: translateX(-6px) rotate(1.2deg);
-				transform: translateX(-6px) rotate(1.2deg);
-	  }
-	}
-	   
-	  @keyframes pop {
-		  0%  {transform: scale(0);}
-		  60%  {transform: scale(1.2);}
-		  80%  {transform: scale(0.8);}
-		  100%  {transform: scale(1);}
-	}
-  
-  
-   @keyframes bounce {
-	  0%, 2.5%, 7.5%, 12.5%, 100% {
-		  transform: translateX(0) translateY(-3px);
-		}
-		5% {
-		  transform: translateX(-3px) translateY(-3px);
-		}
-		10% {
-		  transform: translateX(-3px) translateY(-3px);
-		}
-	}
-	
-	
-  /* GENERALE */
+ 
   
   h1 {
 	  font-family: 'Cabin', sans-serif;
@@ -362,12 +365,10 @@ html {
 	transform: translateY(-100px);
 	position: relative;
 	z-index: 100;
- }
-
- .Skills {
 	background-color: white;
-	border-radius: 10% 60% / 5% 10% ;;
+	border-radius: 8% 92% 0% 100% / 1% 1% 99% 99%;
 	padding-top: 40px;
+	width: 100vw;
  }
 
   #demo {
