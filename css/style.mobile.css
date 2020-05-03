@@ -1,638 +1,346 @@
-@media only screen and (orientation: portrait) {
-	#hero h1 {
-		margin-bottom: 0px;
-		margin-top: 15vw;
- 	}
+@media only screen and (max-width: 640px) {
+  header, .animazione {
+    height: 90vh;
+  }
+
+
+  #particles-js{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d500d5;
+    background-image: url('./sfondo-hero-mobile.png');
+    background-size: 100% 100%;
+    background-position: top bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+    }
+
+  .corpoCV {
+    border-radius: 20px 20px 0 0;
+    transform: translateY(-10vh);
+    padding-top: 2px;
+  }
+
+  #demo {
+    display: none;
+  }
+
+  .fa-paperclip, .fa-envelope-open {
+    color: lightgrey;
+  }
+  
+  #hero {
+    display: none;
+  }
+
+  #heroMobile {
+    color: whitesmoke;
+    grid-row-start: 3;
+	  grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    }
+    
+    #titleAndDesc { 
+      height: auto;
+      grid-area: 1 / 1 / 2 / 2;
+      margin: 0  20px; 
+    }
+
+    #titleAndDesc h2{ 
+      text-decoration: underline;
+      text-decoration-color: aqua;
+    }
+
+    #goingToSkills { 
+      grid-area: 2 / 1 / 3 / 2; 
+    }
+
+    #categoriesHeroM { 
+      grid-area: 2 / 1 / 3 / 2; 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .btnGoToM {
+      font-family: 'Ubuntu', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 60px;
+      width: 100px;
+      background-color: white;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+      color: #333;
+      border-radius: 5px;
+      margin-bottom: 30px;
+	
+    }
 }
 
 @media screen and (max-width: 600px) {
-     
-    body {
-        font-size: 14px;
+
+  .navTesto {
+      display: none;
+  }
+
+  .navIcon {
+      display: initial;
+      color: white;
+  }
+
+  .navWrapper * {
+      margin: 0px 5px;
+      text-align: center;
+      }
+
+ 
+    .titoloSezione {
+      text-align: center;
+       }
+
+       .titoloSezione h2 {
+          margin-left: 0px;
+        }
+
+      .titoloSezione hr {
+          margin-left: 0px;
+          width: 100%;
+      }
+
+      .skillContainer {
+          width: 250px;
+      }
+  
+  .containerTimeline {
+      margin: 10% 20px 0px 20px;
+      }
+
+  .containerLavoro {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+  }
+  
+  .timeline {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+      grid-template-rows: auto 1fr;
+  }
+  
+  .linea {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-color: #0024ba;
+      background-image: linear-gradient(to top, #001acd, #0024ba, #0029a6, #002c91, #1e2f92, #2d3293, #393594, #5d37aa, #8334bc, #ab29cb, #d500d5);
+  
+  }
+  
+  .data {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      margin-bottom: 30px;
+      padding: 0px 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 5px;
+      flex-direction: row;
+      justify-self: center;
+  }
+
+  .data br {
+      display: none;
+  }
+  
+  .lavoroBox {
+      z-index: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      background-color: white;
+  }
+  
+  .titolettoLavoro {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+  }
+  
+  .imgLavoro {
+      height: 70px;
+      width: 70px;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      align-self: center;
+      justify-self: center;
+  }
+  
+  .datoreDescrizioneTitolo {
+      margin: 10px;
+      grid-column-start: 1;
+      grid-row-start: 2;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .datoreDescrizioneTitolo p {
+      margin-top: 5px;
+  }
+  
+  .datoreDescrizioneTitolo span {
+      margin-top: 3px;
+      font-style: italic;
+  }
+  
+  .datoreDescrizioneTitolo h3 {
+      margin: 0px;
+      width: 100%;
+  }
+  
+  .datoreDescrizioneTitolo hr {
+      margin-top: 10px;
+      width: 100%;
+  }
+      
+  .mansioni ul{
+      text-align: justify;
+      text-justify: inter-word;
+      padding-left: 20px;
+      list-style-position: outside;
     }
-     
-    .animazione {
-          height: 700px;     
-     }
-     
-     header{
-          height: 100%
-     }
-     
-    .navTesto {
+
+    .mansioni li {
+      margin-bottom: 5px;
+    }
+
+    .certificationsBox {
+        margin: 0px 20px 10% 20px;
+    }
+
+    .imgCertification {
+      width: 70px;
+      height: 70px;
+    }
+
+    .imgCertification img {
+      width: 70px;
+    }
+
+    .activityDifferantiatorHr {
         display: none;
     }
 
-    .navIcon {
-        display: initial;
-    }
-
-    .navWrapper * {
-        margin: 0px 5px;
-        text-align: center;
-        }
-
-    #barraRicerca{
-         width: 220px;
-     }
-     
-     #dD {
-          width: 220px;
-     }
-
-      .titoloSezione {
-        text-align: center;
-         }
-
-         .titoloSezione h2 {
-            margin-left: 0px;
-          }
-
-        .titoloSezione hr {
-            margin-left: 0px;
-            width: 100%;
-        }
-
-        .skillContainer {
-            width: 250px;
-        }
-    
-    .containerTimeline {
-        margin: 10% 20px 0px 20px;
-        }
-
-    .containerLavoro {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-    
-    .timeline {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        display: grid;
-        grid-template-columns: 1fr 3px 1fr;
-        grid-template-rows: auto 1fr;
-    }
-    
-    .linea {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        background-color: #726fb9;
-	   background-image: linear-gradient(to top, #726fb9,  #9874c8, #9874c8, #d857df);
-    
-    }
-	
-      #ultimoLavoro .timeline {
-       grid-template-rows: auto 30px 1fr;
-   }
-     #ultimoLavoro .linea {
-     grid-row-end: 3;
-   }
-    
-    .data {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-bottom: 30px;
-        padding: 0px 20px;
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 5px;
-        flex-direction: row;
-        justify-self: center;
-    }
-
-    .data br {
-        display: none;
-    }
-    
-    .lavoroBox {
-        z-index: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        display: flex;
-        flex-direction: column;
-        margin-top: 80px;
-        background-color: white;
-    }
-    
-    .titolettoLavoro {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-    
-    .imgLavoro {
-        height: 70px;
-        width: 70px;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .datoreDescrizioneTitolo {
-        margin: 10px;
-        grid-column-start: 1;
-        grid-row-start: 2;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .datoreDescrizioneTitolo p {
-        margin-top: 5px;
-    }
-    
-    .datoreDescrizioneTitolo span {
-        margin-top: 3px;
-        font-style: italic;
-    }
-    
-    .datoreDescrizioneTitolo h3 {
-        margin: 0px;
-        width: 100%;
-    }
-    
-    .datoreDescrizioneTitolo hr {
-        margin-top: 10px;
-        width: 100%;
-    }
-        
-    .mansioni ul{
-        text-align: justify;
-        text-justify: inter-word;
-        padding-left: 20px;
-        list-style-position: outside;
-      }
-
-      .mansioni li {
-        margin-bottom: 5px;
-      }
-
-      .certificationsBox {
-          margin: 0px 20px 10% 20px;
-      }
-
-      .imgCertification {
-        width: 70px;
-        height: 70px;
-      }
-
-      .imgCertification img {
-        width: 70px;
-      }
-
-      .activityDifferantiatorHr {
-          display: none;
-      }
-
-      .activitiesWrapper {
-          margin-left: 20px;
-          margin-right: 20px;
-      }
-
-      .Interests h3 {
-          margin-left: 0;
-          text-align: center;
-      }
-      .interesseBox {
-        width: 400px;
-        grid-template-columns: 100px 1fr;
+    .activitiesWrapper {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-      .interesseBox:first-child {
-          margin-left: 20px;
-          margin-right: 20px;
-      }
+    .Interests h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .interesseBox {
+      width: 400px;
+      grid-template-columns: 100px 1fr;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
 
-      .rightBordCreator {
-          display: none;
-      }
-
-      /*BOTTONE*/
-
-    #sticky {
-       width: 110px;
-       height: 120px;
+    .interesseBox:first-child {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    #chiudi {
-        width: 80px;
-        height: 80px;
+    .rightBordCreator {
+        display: none;
     }
 
-    #next {
-        width: 100%;
-        height: 30px;
-    }
+    /*BOTTONE*/
+
+  #sticky {
+     width: 110px;
+     height: 120px;
+  }
+
+  #chiudi {
+      width: 80px;
+      height: 80px;
+  }
+
+  #next {
+      width: 100%;
+      height: 30px;
+  }
 }
 
 @media screen and (max-height: 640px) {
-    
-     body {
-        font-size: 14px;
-    }
-     
-     .animazione {
-          height: 700px;     
-     }
-     
-      header{
-          height: 100%
-     }
-     
-      #barraRicerca{
-         width: 220px;
-     }
-     
-     #dD {
-          width: 220px;
-     }
+  body {
+      font-size: 14px;
+  }
 
 
 }
 
 @media screen and (max-height:450px) and (orientation: landscape) {
 
-    body {
-        font-size: 14px;
-    }
-     
-     .animazione {
-          height: 500px;     
-     }
-     
-      header{
-          height: 100%
-     }
+  body {
+      font-size: 12px;
+  }
 
-	 #barraRicerca{
-         width: 260px;
-     }
-     
-     #dD {
-          width: 260px;
-     }
-
-    nav {
-        margin-bottom: 0px;
+  #particles-js{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d500d5;
+    background-image: url('./sfondo-hero-mobile-L.png');
+    background-size: auto 100%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
     }
 
-    .navWrapper {
-        justify-content: flex-end;
-    }
+  nav {
+      margin-bottom: 0px;
+  }
 
-    .navWrapper * {
-        margin: 0px 5px;
-        text-align: center;
-    }
+  .navWrapper {
+      justify-content: flex-end;
+  }
 
-    
-    header {
-        grid-template-rows: 2px auto 1fr;
-    }
+  .navWrapper * {
+      margin: 0px 5px;
+      text-align: center;
+  }
 
-    .hero {
-        margin-top: 2px;
-        align-items: center;
-    }
-
-    .heroIntWrapperExt {
-        flex-direction: row;
-    }
-
-    #GranTitolo {
-        text-align: right;
-        width: 35vw;
-        margin-right: 20px;
-    }
-
-    .heroIntWrapperInt {
-        max-height: 100vh;
-        grid-template-rows: 10px 2fr 1fr 30px 1fr 2fr 10px;
-        margin: 0 10px 10px 0;
-    }
-
-    #center * {
-        margin: 0px;
-        padding: 5px;
-      }
-
-    #freccia {
-        margin-bottom: 5px;
-    }
+  
+ 
 }
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-	
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-	  .animazione {
-          height: 600px;     
-     }
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-	.animazione {
-          height: 350px;     
-     }
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-	.animazione {
-          height: 700px;     
-     }
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-	.animazione {
-          height: 400px;     
-     }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-	.animazione {
-          height: 750px;     
-     }
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-	.animazione {
-          height: 430px;     
-     }
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-	.animazione {
-          height: 820px;     
-     }
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-	.animazione {
-          height: 400px;     
-     }
-}
-
-/* ----------- Galaxy S3 ----------- */
-
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-	.animazione {
-          height: 650px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
-	.animazione {
-          height: 340px;     
-     }
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-	.animazione {
-          height: 650px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-	.animazione {
-          height: 350px;     
-     }
-}
-
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
-	.animazione {
-          height: 650px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: landscape) {
-	  .animazione {
-          height: 370px;     
-     }
-
-}
-
-/* ----------- Google Pixel ----------- */
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-	 .animazione {
-          height: 650px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-	 .animazione {
-          height: 370px;     
-     }
-}
-
-/* ----------- Google Pixel XL ----------- */
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
-	 .animazione {
-          height: 650px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: landscape) {
-	   .animazione {
-          height: 370px;     
-     }
-}
-
-/* ----------- HTC One ----------- */
-
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-	.animazione {
-          height: 650px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-	.animazione {
-          height: 370px;     
-     }
-}
-
-/* ----------- Windows Phone ----------- */
-
-/* Portrait */
-@media screen 
-  and (device-width: 480px) 
-  and (device-height: 800px)  
-  and (orientation: portrait) {
-	.animazione {
-          height: 810px;     
-     }
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 480px) 
-  and (device-height: 800px) 
-  and (orientation: landscape) {
-	.animazione {
-          height: 500px;     
-     }
-}
