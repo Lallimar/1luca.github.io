@@ -64,8 +64,8 @@
     font-size: 1em;
     align-self: center;
     justify-self: center;
-    -webkit-animation: jello-vertical 0.9s both;
-    animation: jello-vertical 0.9s both;
+    -webkit-animation: jello-vertical 0.9s 3s both;
+    animation: jello-vertical 0.9s 3s both;
   }
 
   #goToSkillsM i {
