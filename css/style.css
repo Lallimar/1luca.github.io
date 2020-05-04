@@ -203,7 +203,7 @@ html {
   
    } 
    
-   #hero h1 {
+   #titleHero {
 	  grid-area: 1 / 2 / 2 / 4;
 	  margin-top: 10vh; 
 	  margin-bottom: 0px;
@@ -212,7 +212,7 @@ html {
 	  text-decoration-color: aqua;
    }
   
-   #hero p {
+   #justRelax {
 	grid-area: 2 / 2 / 3 / 4;
 	text-align: center;
 	font-size: 1.4em;  
@@ -231,6 +231,7 @@ html {
 	  border-radius: 15px;
 	  text-align: center;
 	  color: #333;
+	  align-self: center;
 	}
   
 	#barraRicerca:active, #go:active {
@@ -262,20 +263,26 @@ html {
   
 	#go {
 	  grid-area: 3 / 3 / 4 / 4;
-	  height: 45px;
-	  width: 45px;
+	  height: 70px;
+	  width: 70px;
 	  margin: 0px;
 	  text-align: center;
 	  border: 1px solid aqua;
-	  border-radius: 50%;
+	  border-radius: 57% 43% 31% 69% / 23% 26% 74% 77%;
 	  background-color: aqua;
 	  cursor: pointer;
 	  transition: 0.5s ease-in;
 	}
   
 	#go i {
-		font-size: 24px;
+		font-size: 27px;
 		color: #333;
+	}
+
+	#go:hover {
+		transform: translateY(-3px);
+		transition: 0.2s ease-in;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	
   
@@ -329,15 +336,27 @@ html {
 		justify-content: center;
 		text-align: center;
 		font-size: 27px;
-		height: 60px;
-		width: 60px;
+		height: 65px;
+		width: 65px;
 		background-color: white;
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 		color: #333;
-		border-radius: 50%;
+		border-radius: 23% 77% 31% 69% / 74% 26% 74% 26%;
 		margin-bottom: 30px;
 		cursor: pointer;
 		transition: 0.2s ease-in;
+	}
+
+	#bTGJ {
+		border-radius: 23% 77% 31% 69% / 74% 26% 74% 26%;
+	}
+
+	#bTGE {
+		border-radius: 28% 72% 68% 32% / 23% 26% 74% 77%;
+	}
+
+	#bTGI {
+		border-radius: 60% 40% 68% 32% / 69% 64% 36% 31%;
 	}
 
 	.btnGoTo:hover {
@@ -345,6 +364,10 @@ html {
 		transition: 0.2 ease-in;
 	}
 
+
+	#goToSkillsM{
+		display: none;
+	}
   
   /* GENERALE SEZIONI DEL CORPO CV */
   
