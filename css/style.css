@@ -768,7 +768,7 @@ html {
 	align-items: center;
 	height: 100px;
 	width: 100px;
-	border-radius: 50%;
+	border-radius: 30% 70% 26% 74% / 30% 30% 70% 70%;
 	animation:  pop 0.5s ease 1;
   }
   
@@ -791,6 +791,7 @@ html {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	-webkit-animation: wobble-hor-top 0.8s 3s both;
 	animation: wobble-hor-top 0.8s 3s both;
+	border-radius: 30% 70% 52% 48% / 28% 3% 97% 72%;
   }
   
   #next p {
