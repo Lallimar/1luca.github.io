@@ -312,6 +312,34 @@
   }
 
   
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+ 
+   
+  #titleHero { 
+    text-align: center;
+    display: block;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  }
+  
+  #justRelax { 
+    text-align: center;
+    display: block;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FFF, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 55px #fff, 0 0 75px #fff;
+  }
+
+  #barraRicerca, #dD, #go, #goToSkillsM, #categoriesHero {
+    display: none;
+  }
+  
+  .corpoCV {
+    transform: translateY(-15vh);
+  }
+
  
 }
 /* ----------------------------------------------
