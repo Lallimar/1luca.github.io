@@ -37,7 +37,7 @@
   }
 
   #categoriesHero {
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 4 / 2;
     margin-top: 0;
     padding: 0;
 		flex-direction: row;
@@ -47,29 +47,14 @@
 
 
   #goToSkillsM {
-    grid-area: 3 / 1 / 4 / 2;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 140px;
-    width: 140px;
-    margin: 0px;
-    text-align: center;
-    border: 3px solid aqua;
     border-radius: 57% 43% 31% 69% / 23% 26% 74% 77%;
-    background-color: white;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
-    font-family: 'Cabin', sans-serif;
-    font-size: 1em;
-    align-self: center;
-    justify-self: center;
+    background-color: aqua;
     -webkit-animation: jello-vertical 0.9s 3s both;
     animation: jello-vertical 0.9s 3s both;
   }
 
   #goToSkillsM i {
-    font-size: 4em;
     color: #333;
   }
 
