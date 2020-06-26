@@ -17,7 +17,7 @@
 
   #hero {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr 1fr 30vh;
+    grid-template-rows: auto auto 1fr 30vh;
     background-image: url("/img/header/sfondo-hero-2.png");
   }
 
