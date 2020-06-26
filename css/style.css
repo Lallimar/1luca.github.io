@@ -55,16 +55,17 @@
     /* GENERALE */
 
 
-html {
-	scroll-behavior: smooth;
-	font-size: 16px;	
-	box-sizing: border-box;
+	html {
+		scroll-behavior: smooth;
+		font-size: 16px;
+		box-sizing: border-box;
 	}
 
 
-  *, *:before, *:after {
+	*, *:before, *:after {
 	box-sizing: inherit;
-  }
+	}
+
   
   body {
 	  font-family: 'Ubuntu', sans-serif;
@@ -189,10 +190,6 @@ html {
   }
   
   /* HERO SECTION */
-  
-  #heroMobile {
-	  display: none;
-  }
  
   #hero {
 	  grid-row-start: 3;
@@ -201,7 +198,7 @@ html {
 	  display: grid;
 	  grid-template-columns: 1fr auto 40px 1fr;
 	  grid-template-rows: repeat(4, auto) 1fr; 
-	  background-image: url("/img/header/sfondo-hero.png");
+	  background-image: url("./sfondo-hero.png");
 	  background-repeat: no-repeat;
 	  background-size: 100% 100%;
 	  background-position: left bottom;
@@ -400,12 +397,10 @@ html {
  }
 
   #demo {
-	font-size: 1.4em; 
 	margin-left: 10%;
 	margin-top: 0;
 	margin-bottom: 0;
-  	text-decoration: underline;
-  	text-decoration-color: aqua;
+	text-decoration: underline aqua;
 
   }
   
@@ -776,7 +771,7 @@ html {
 	align-items: center;
 	height: 100px;
 	width: 100px;
-	border-radius: 30% 70% 26% 74% / 30% 30% 70% 70%;
+	border-radius: 50%;
 	animation:  pop 0.5s ease 1;
   }
   
@@ -799,7 +794,6 @@ html {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	-webkit-animation: wobble-hor-top 0.8s 3s both;
 	animation: wobble-hor-top 0.8s 3s both;
-	border-radius: 30% 70% 52% 48% / 28% 3% 97% 72%;
   }
   
   #next p {
@@ -816,9 +810,8 @@ html {
    }
   
   footer {
-	border-radius: 50% 10% 0 0;
+	border-radius: 10% 10% 0 0;
 	margin-top: 5%;
-	padding-top: 10%; 
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	height: auto;
 	font-size: 0.9em;
